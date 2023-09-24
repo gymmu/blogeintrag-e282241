@@ -15,7 +15,7 @@ h1 {
   max-height: 10%;
 }
 
-/* Zentriere alle Elemente in dem Container, setze die Höhe und die Breite fest. */
+
 .container-with-bg {
   display: flex;
   justify-content: center;
@@ -25,15 +25,13 @@ h1 {
   height: 100px;
 }
 
-/* Setze den Container mit dem Inhalt vor den Hintergrund, damit können sich
-   Elemente überlappen. */
+
 .container-with-bg > div.content {
   color: white;
   z-index: 1;
 }
 
-/* Nimm den Bild-Container aus dem normalen Dokumentenfluss raus, und verstecke
-   alles was über das enthaltende Element heraus läuft. */
+
 .container-with-bg > div.bg-img {
   position: absolute;
   inset: 0;
@@ -41,26 +39,39 @@ h1 {
   overflow: hidden;
 }
 
-/* Skaliere das Bild auf die volle Breite und zentriere es vertikal. */
+
 .container-with-bg > div.bg-img > img {
   width: 100%;
   transform: translateY(-50%);
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+h2:hover {
+  font-size: 1.5em;
+}
+
+
+.img-center {
+  text-align: center;
+}
+
+.img-center > img {
+  width: 30%;
 }
 
 h3 {
   text-align: center;
 }
 
-p {
-  text-align: center;
-  
+.text-left {
+  text-align: left;
+  color: darkblue;
 }
 
-.img-center {
-  width: 40%;
-}
-
-.haupttext {
-  position: relative; left: 90px;
-  width: 800px;
-}
